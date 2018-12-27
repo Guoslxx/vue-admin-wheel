@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "iview": "^3.2.1",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
     "vue": "^2.5.17",
     "vue-router": "^3.0.2"
   },
@@ -32,7 +34,8 @@
       "eslint:recommended"
     ],
     "rules": {
-      "no-console": "off"
+      "no-console": "off",
+      "x-invalid-end-tag":"off"
     },
     "parserOptions": {
       "parser": "babel-eslint"

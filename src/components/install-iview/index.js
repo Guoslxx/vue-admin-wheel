@@ -3,9 +3,10 @@ import {
     Row,
     Col,
     Table,
-    Header,
-    Sider,
-    Footer,
+    Icon,
+    Dropdown,
+    DropdownItem,
+    DropdownMenu
 } from 'iview'
 export default{
     install(Vue){
@@ -13,8 +14,9 @@ export default{
         Vue.component('Row',Row);
         Vue.component('Col',Col);
         Vue.component('Table',Table);
-        Vue.component('Header',Header);
-        Vue.component('Sider',Sider);
-        Vue.component('Footer',Footer);
+        Vue.component('Icon',Icon);
+        Vue.component('Dropdown',Dropdown);
+        Vue.component('DropdownItem',DropdownItem);
+        Vue.component('DropdownMenu',DropdownMenu);
     }
 }
