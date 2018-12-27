@@ -1,27 +1,19 @@
 <template>
   <div id="app">
-    <router-link to='/home'>home</router-link>
+    <BaseLayout></BaseLayout>
+    <!-- <router-link to='/home'>home</router-link>
     <router-link to='/user'>user</router-link>
-    <router-view></router-view>
+    <router-view></router-view> -->
   </div>
 </template>
 
 <script>
+import BaseLayout from "./layout/BaseLayout";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
+    BaseLayout
   }
-}
+};
 </script>
-
-<style>
-  #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
