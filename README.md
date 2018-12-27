@@ -1,5 +1,4 @@
 # vue-admin-wheel
-<<<<<<< HEAD
 
 ## Project setup
 ```
@@ -25,6 +24,3 @@ yarn run test
 ```
 yarn run lint
 ```
-=======
-vue admin wheel
->>>>>>> ae29eef1f115e5fa9271f45727d509439359c628
