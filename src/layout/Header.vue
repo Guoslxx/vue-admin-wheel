@@ -27,7 +27,7 @@
         </ul>
         <div class="nav-user">
           <Dropdown>
-            <Icon type="md-person" size="40" class="nav-user-icon"/>
+            <img height="40" width="40" src="https://img.alicdn.com/tfs/TB1L6tBXQyWBuNjy0FpXXassXXa-80-80.png" class="user-avatar">
             <div class="nav-user-text">
               <span>Mr.Guosl</span>
               <br>
@@ -56,10 +56,13 @@ export default {
 .layout-header {
   .layout-inner {
     padding: 20px 0;
-
+    .logo{
+      width:240px;
+    }
     .logo-text {
       display: block;
       width: 100%;
+      text-align: center;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -93,7 +96,7 @@ export default {
         .ivu-dropdown-rel {
           display: flex;
           align-items: center;
-          .nav-user-icon {
+          .user-avatar {
             background: #bebebe;
             color: #e8e8e8;
             border-radius: 4px;
