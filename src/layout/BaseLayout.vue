@@ -19,7 +19,7 @@
             </BreadcrumbItem>
           </Breadcrumb>
         </Card>
-        <Card class="layout-view" >
+        <Card class="layout-view">
           <transition :name="transitionName" mode="out-in">
             <router-view></router-view>
           </transition>
@@ -35,6 +35,8 @@
 <script>
 import Header from "./Header";
 import LeftSide from "./LeftSide";
+import { routesConfig } from "../router";
+console.log(routesConfig);
 export default {
   name: "BaseLayout",
   components: {
@@ -48,7 +50,6 @@ export default {
   },
   watch: {
     $route(to, from) {
-      console.log(to, from);
       const toDepth = to.path.split("/").length;
       const fromDepth = from.path.split("/").length;
       this.transitionName = toDepth < fromDepth ? "slide-right" : "slide-left";

@@ -1,30 +1,12 @@
 <template>
-  <aside class="layout-sider">
-    <Menu class="admin-menu" :open-names="['1']" @on-select="handleSelect">
-      <Submenu name="1">
-        <template slot="title">
-          <Icon type="ios-paper"/>内容管理
-        </template>
-        <MenuItem name="home">
-          控制台
-        </MenuItem>
-        <MenuItem name="user">
-          用户管理
-        </MenuItem>
-        <MenuItem name="article">
-          文章编辑
-        </MenuItem>
-      </Submenu>
-    </Menu>
-  </aside>
+<SidebarMenu></SidebarMenu>
 </template>
 <script>
+import SidebarMenu from "../components/SidebarMenu";
 export default {
   name: "LeftSide",
-  methods:{
-    handleSelect(name){
-      this.$router.push(`/${name}`)
-    }
+  components: {
+    SidebarMenu
   }
 };
 </script>
@@ -45,8 +27,9 @@ export default {
       color: @mainColor;
       border-radius: 8px;
     }
-    .ivu-menu-item-selected a,.ivu-menu-item a{
-      color:@mainColor;
+    .ivu-menu-item-selected a,
+    .ivu-menu-item a {
+      color: @mainColor;
     }
     &::after,
     .ivu-menu-item-active:not(.ivu-menu-submenu):after {
